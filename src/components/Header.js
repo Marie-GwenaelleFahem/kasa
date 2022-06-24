@@ -1,12 +1,14 @@
 import '../style/header.css';
-import firstLetter from '../assets/logo/letter-k.svg'
-import kasaLogo from '../assets/logo/kasa-logo.svg'
-import thirdtLetter from '../assets/logo/letter-s.svg'
-import lastLetter from '../assets/logo/letter-a.svg'
+import firstLetter from '../assets/logo/logo-header/letter-k.svg'
+import kasaLogo from '../assets/logo/logo-header/kasa-logo.svg'
+import thirdtLetter from '../assets/logo/logo-header/letter-s.svg'
+import lastLetter from '../assets/logo/logo-header/letter-a.svg'
 import banner from '../assets/img/header-img.png'
 
 
 function Header() {
+    const homePage = "Accueil";
+    const about = "A Propos";
     return (
         <div className="header">
             <div className="header-top">
@@ -17,8 +19,8 @@ function Header() {
                     <img src={lastLetter} alt=""></img>
                 </div>
                 <div className="header-links">
-                    <a href="#">Accueil</a>
-                    <a href="#">A Propos</a>
+                    <a href="#">{homePage}</a>
+                    <a href="#">{about}</a>
                 </div>
             </div>
             <div className="header-bottom"> 
