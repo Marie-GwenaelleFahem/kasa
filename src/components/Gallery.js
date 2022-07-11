@@ -1,6 +1,5 @@
 import '../style/gallery.css';
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import Items from './Items'
 
 function Gallery() {
@@ -19,11 +18,9 @@ function Gallery() {
     }) 
     
     return (
-        <Link to="/housingsheet">
-            <div className="gallery">
-                {annonceList.map(annonce => <Items key={annonce.id} annonce={annonce}/>)}
-            </div>
-        </Link>
+        <div className="gallery">
+            {annonceList.map(annonce => <Items key={annonce.id} annonce={annonce} />)}
+        </div>
     )
 }
 

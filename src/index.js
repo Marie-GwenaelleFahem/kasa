@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import About from './pages/About'
 import HousingSheet from './pages/HousingSheet';
+import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +15,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />}/>
-        <Route path="/housingsheet" element={<HousingSheet />} />
+        <Route path="/housingsheet/:id" element={<HousingSheet />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>
