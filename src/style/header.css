@@ -85,19 +85,28 @@
 
     .header-top {
         display: flex;
-        justify-content: space-between;
-        padding: 0;
+        justify-content: space-evenly;
+        padding: 0 10px;
     }
 
-    /* .header-logo {
-        width: 12%;
-    } */
+    .header-logo {
+        display: flex;
+    }
+
+    .header-logo img {
+        width: 16%;
+    }
 
     .header-bottom {
         padding: 0;
     }
 
-    .banner-header {
-        padding: 0;
+    .header-links {
+        display: flex;
+        text-transform: uppercase;
+    }
+
+    .header-links p {
+        font-size: 12px;
     }
 }

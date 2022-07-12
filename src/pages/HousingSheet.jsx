@@ -3,7 +3,6 @@ import Footer from "../components/Footer"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from 'react'
 import '../style/housingsheet.css'
-import Chevron from '../assets/icon/chevron-up.png'
 import Collapse from '../components/Collapse'
 
 function HousingSheet() {
