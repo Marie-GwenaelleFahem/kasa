@@ -16,3 +16,27 @@
     border-radius: 25px;
     filter: brightness(0.7);
 }
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        margin: 15px;
+    }
+
+    .banner-header {
+        position: relative;
+        padding: 0 5px;
+        height: 133px;
+
+    }
+
+    .banner-header img {
+        border-radius: 10px;
+    }
+
+    .banner-header p {
+        font-size: 27px;
+        line-height: 100%;
+        text-align: left;
+        left: 155px;
+    }
+}
